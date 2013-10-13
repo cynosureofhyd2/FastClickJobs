@@ -1,0 +1,141 @@
+﻿@model IEnumerable<CBApi.Models.Responses.JobSearchResult>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Company)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyDID)
+        </th>
+       @* <th>
+            @Html.DisplayNameFor(model => model.CompanyDetailsURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.OnetCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ONetFriendlyTitle)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.DescriptionTeaser)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Distance)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmploymentType)
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.JobDetailsURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobServiceURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationLatitude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LocationLongitude)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.Location)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostedDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SimilarJobsURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CompanyImageURL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobBrandingIcons)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Company)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.CompanyDID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyDetailsURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.OnetCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ONetFriendlyTitle)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.DescriptionTeaser)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Distance)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmploymentType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobDetailsURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobServiceURL)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.LocationLatitude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LocationLongitude)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.Location)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostedDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SimilarJobsURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CompanyImageURL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobBrandingIcons)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

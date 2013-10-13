@@ -1,0 +1,64 @@
+﻿@model IEnumerable<CBApi.Models.Responses.JobSearchResult>
+
+@{
+    ViewBag.Title = "Job Search Results";
+}
+
+<h2>Job Search Results</h2>
+<style type="text/css">
+    div
+    {
+        color: #000;
+        font-size:12px;
+    }
+
+    #JobSearchPage #JobSearchResults .jobListings .featuredJobListings {
+background-color: white;
+}
+
+    .jobScopeWrapper {
+padding: 12px 0 10px;
+border-bottom: 1px solid #dae0e6;
+position: relative;
+}
+
+    #JobSearchResults div.jobListing {
+float: left;
+width: 505px;
+margin-top: 0;
+}
+
+    #JobSearchPage #JobSearchResults .jobListing h3 {
+font-size: 16px;
+margin-bottom: 1px;
+font-weight: normal;
+}
+
+    .featuredJobListings .jobListing .jobListingData {
+width: 100%;
+float: none;
+}
+
+</style>
+
+<div class="jobListings">
+    <div class="featuredJobListings featuredJobListingsTop">
+                    @foreach (var item in Model)
+                    {
+                        string test =  @item.DID;
+                        string description = item.DescriptionTeaser;
+                    <div class="jobScopeWrapper">
+                        <div class="jobListing firstJobListing">
+                                                  
+                                    <div class="jobListingData">
+                                        @Html.DisplayFor(modelItem => item.Company)
+                                        <div>
+                                              @*<a href=test>@Html.DisplayFor(modelItem => item.DescriptionTeaser)</a>*@
+                                            @Html.ActionLink(description, test, "Home/Job/")
+                                        </div>
+                                    </div>                    
+                        </div>
+                    </div>
+                    }
+    </div>
+</div>

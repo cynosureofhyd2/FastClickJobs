@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>CBAPI</id>
+    <version>2.0.0.0</version>
+    <title>CareerBuilder.com API C# Client Library</title>
+    <authors>Jeffery Yeary</authors>
+    <owners>Jeffery Yeary</owners>
+    <licenseUrl>https://github.com/usbsnowcrash/Careerbuilder.com-API-for-.Net/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/usbsnowcrash/Careerbuilder.com-API-for-.Net/wiki</projectUrl>
+    <iconUrl>https://github.com/usbsnowcrash/Careerbuilder.com-API-for-.Net/tree/master/NuPKG/career_builder_icon.jpg</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>CareerBuilder.com API C# Client Library</description>
+    <releaseNotes>For full release notes see https://github.com/usbsnowcrash/Careerbuilder.com-API-for-.Net/tree/master/NuPKG/RELEASE_NOTES.md</releaseNotes>
+    <copyright>@ CareerBuilder LLC, Jeffery Yeary</copyright>
+    <language />
+    <tags>REST HTTP API JSON XML Careerbuilder Careerbuilders</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="4.5.1" />
+      <dependency id="RestSharp" version="104.1" />
+    </dependencies>
+  </metadata>
+</package>
