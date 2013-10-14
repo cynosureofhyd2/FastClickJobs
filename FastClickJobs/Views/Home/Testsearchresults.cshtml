@@ -1,4 +1,4 @@
-﻿@model IEnumerable<CBApi.Models.Responses.JobSearchResult>
+﻿h@model IEnumerable<CBApi.Models.Responses.JobSearchResult>
 
 @{
     ViewBag.Title = "Job Search Results";
@@ -51,7 +51,7 @@ float: none;
                         <div class="jobListing firstJobListing">
                                                   
                                     <div class="jobListingData">
-                                        @Html.DisplayFor(modelItem => item.Company)
+                                        <b>@Html.DisplayFor(modelItem => item.Company)</b>
                                         <div>
                                               @*<a href=test>@Html.DisplayFor(modelItem => item.DescriptionTeaser)</a>*@
                                             @Html.ActionLink(description, test, "Home/Job/")
